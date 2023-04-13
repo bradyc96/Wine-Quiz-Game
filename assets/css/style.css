@@ -1,0 +1,234 @@
+body {
+    background-color: #d9dcd6;
+    background-image: url('../images/grapes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-color: #13293df1;
+    min-height: 10vh;
+    box-shadow: 0 0 2.5px 2px;
+
+}
+
+header h1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+#headerBar {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Courier New';
+}
+
+#questionCard h1 {
+    display: flex;
+    text-align: center;
+}
+
+header a,p{
+    color: white;
+    font-size: 115%;
+}
+
+header a{
+    padding-top: 1rem;
+}
+
+
+.container {
+    max-width: 70%;
+    min-width: 70%;
+    background: rgb(254, 250, 238);
+    min-height: 68vh;
+    max-height: 68vh;
+    border-radius: 15px;
+    padding: 1vh;
+    box-shadow: 0 0 9px;
+    margin-top: 6.5rem;
+    font-size: 125%;
+}
+
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 225%;
+    padding-top: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+
+
+.answerGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 20px 0;
+    grid-auto-rows: 130px;
+    justify-items: stretch;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6rem;
+}
+
+button {
+    background-color: #13293df1;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 2.5px forestgreen;
+}
+
+#btn1,#btn2,#btn3,#btn4 {
+    font-weight: 200;
+    font-size: 110%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+button:hover {
+    background-color: rgba(34, 139, 34, 0.671);
+}
+
+
+button:active {
+    transform: translateY(6px);
+    color: black;
+}
+
+
+.startBtnClass {
+    font-size: 3rem;
+    min-height: 67.5vh;
+    font-weight: bold;
+    background: forestgreen;
+}
+
+
+.start {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hide {
+    display: none;
+}
+
+
+#currentScore p {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#scoreColumn {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+button#scoreSaver {
+    background-color: #a98468;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 6px;
+    box-shadow: 0 0px black;
+    width: 5rem;
+    height: 1.5rem;
+    padding-right: 5px;
+}
+
+
+
+button#scoreSaver:active {
+    transform: translatex(30px);
+    color: white;
+}
+
+.input-group {
+    transform: rotate(-0.25turn);
+    margin-top: 4rem;
+    
+}
+
+#nameInput {
+    height: 3.8rem;
+    width: 13rem;
+    text-indent: 102px;
+    border-right: 1px;
+    border-radius: 7px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+#currentScore p {
+    margin-top: 12rem;
+    font-size: 135%;
+}
+
+
+.endGame {
+    min-width: 42rem;
+    max-width: 42rem;
+    background: white;
+    min-height: 80vh;
+    border-radius: 7px;
+    box-shadow: 0 0 6px;
+    margin-top: 3rem;
+    background: rgb(254, 250, 238);
+}
+
+.nameInput {
+    text-size-adjust: 200%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+#playAgainButton  {
+display: flex;
+justify-content: end;
+border-radius: 5px;
+background-color: forestgreen;
+margin-top: 45rem;
+align-self: center;
+margin-left: 18rem
+}
+
+#playAgainButton:hover {
+    background-color: rgba(34, 139, 34, 0.671);
+}
+
+#highScoreList {
+    display:flex;
+    justify-content: end;
+}
+
+#instructions {
+    color: black;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#endScoreHeader h2{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+footer {
+    height: 0vh;
+}
