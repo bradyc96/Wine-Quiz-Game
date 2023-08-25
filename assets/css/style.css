@@ -1,22 +1,20 @@
 body {
     background-color: #d9dcd6;
-    background-image: url('../images/grapes.jpg');
+    background-image: url("../images/grapes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
-
 
 main {
     display: flex;
     justify-content: center;
 }
 
-header{
+header {
     background-color: #13293df1;
     min-height: 10vh;
     box-shadow: 0 0 2.5px 2px;
-
 }
 
 header h1 {
@@ -29,7 +27,7 @@ header h1 {
 #headerBar {
     display: flex;
     justify-content: space-evenly;
-    font-family: 'Courier New';
+    font-family: "Courier New";
 }
 
 #questionCard h1 {
@@ -37,15 +35,15 @@ header h1 {
     text-align: center;
 }
 
-header a,p{
+header a,
+p {
     color: white;
     font-size: 115%;
 }
 
-header a{
+header a {
     padding-top: 1rem;
 }
-
 
 .container {
     max-width: 70%;
@@ -60,17 +58,14 @@ header a{
     font-size: 125%;
 }
 
-
 .container h1 {
     display: flex;
     justify-content: center;
     font-size: 225%;
     padding-top: 5rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     font-weight: bold;
 }
-
-
 
 .answerGrid {
     display: grid;
@@ -92,24 +87,23 @@ button {
     box-shadow: 0 2.5px forestgreen;
 }
 
-#btn1,#btn2,#btn3,#btn4 {
+#btn1,
+#btn2,
+#btn3,
+#btn4 {
     font-weight: 200;
     font-size: 110%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
 }
-
-
 
 button:hover {
     background-color: rgba(34, 139, 34, 0.671);
 }
 
-
 button:active {
     transform: translateY(6px);
     color: black;
 }
-
 
 .startBtnClass {
     font-size: 3rem;
@@ -117,7 +111,6 @@ button:active {
     font-weight: bold;
     background: forestgreen;
 }
-
 
 .start {
     display: flex;
@@ -127,7 +120,6 @@ button:active {
 .hide {
     display: none;
 }
-
 
 #currentScore p {
     color: black;
@@ -143,15 +135,13 @@ button:active {
 
 button#scoreSaver {
     background-color: #a98468;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     border-radius: 6px;
     box-shadow: 0 0px black;
     width: 5rem;
     height: 1.5rem;
     padding-right: 5px;
 }
-
-
 
 button#scoreSaver:active {
     transform: translatex(30px);
@@ -161,7 +151,6 @@ button#scoreSaver:active {
 .input-group {
     transform: rotate(-0.25turn);
     margin-top: 4rem;
-    
 }
 
 #nameInput {
@@ -170,15 +159,13 @@ button#scoreSaver:active {
     text-indent: 102px;
     border-right: 1px;
     border-radius: 7px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 
 #currentScore p {
     margin-top: 12rem;
     font-size: 135%;
 }
-
 
 .endGame {
     min-width: 42rem;
@@ -197,14 +184,14 @@ button#scoreSaver:active {
     text-orientation: mixed;
 }
 
-#playAgainButton  {
-display: flex;
-justify-content: end;
-border-radius: 5px;
-background-color: forestgreen;
-margin-top: 45rem;
-align-self: center;
-margin-left: 18rem
+#playAgainButton {
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+    background-color: forestgreen;
+    margin-top: 45rem;
+    align-self: center;
+    margin-left: 18rem;
 }
 
 #playAgainButton:hover {
@@ -212,7 +199,7 @@ margin-left: 18rem
 }
 
 #highScoreList {
-    display:flex;
+    display: flex;
     justify-content: end;
 }
 
@@ -221,14 +208,14 @@ margin-left: 18rem
     padding-bottom: 1.5rem;
     display: flex;
     justify-content: center;
-    
 }
 
-#endScoreHeader h2{
+#endScoreHeader h2 {
     display: flex;
     justify-content: center;
     padding-top: 1rem;
 }
+
 footer {
     height: 0vh;
 }
