@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz Challenge</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Quiz!</h1>
+            <div id="headerBar">
+                <a href="#" id="scoreViewer">View High Scores</a>
+                <div id="timer">
+                    <p id="countdown"></p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <div id="questionCard" class="hide">
+                    <h1 id="question">?</h1>
+                    <div id="answerBtns" class="answerGrid">
+                        <button id="btn1" onclick="chooseAnswer(event)">
+                            ?
+                        </button>
+                        <button id="btn2" onclick="chooseAnswer(event)">
+                            ?
+                        </button>
+                        <button id="btn3" onclick="chooseAnswer(event)">
+                            ?
+                        </button>
+                        <button id="btn4" onclick="chooseAnswer(event)">
+                            ?
+                        </button>
+                    </div>
+                    <div id="currentScore">
+                        <p>
+                            Current Score: +<span id="currentScoreSpan">0</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="start">
+                    <button id="startBtn" class="startBtnClass">START</button>
+                </div>
+            </div>
+            <div class="endGame hide">
+                <div id="endScoreHeader">
+                    <h2>Final Score: +<span id="endScoreSpan">0</span></h2>
+                    <p id="instructions">
+                        Write your name on the bottle and pop the cork to save
+                        your score.
+                    </p>
+                    <div class="input-group">
+                        <input
+                            id="nameInput"
+                            type="text"
+                            placeholder="Enter Name"
+                        />
+                        <button id="scoreSaver">Save</button>
+                    </div>
+                </div>
+                <div id="highScoreSection">
+                    <h3>Highscores:</h3>
+                    <ol id="highScoreList"></ol>
+                </div>
+
+                <button id="playAgainButton">Play Again</button>
+
+                <div id="scoreColumn">
+                    <!-- <div class="input-group">
+                    <input id = "nameInput" type="text" placeholder="Enter Name">
+                    <button id="scoreSaver">Save</button>
+                </div> -->
+                    <!-- <div id="list">
+                    <ol id = 'highScoreList'></ol>
+                </div> -->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="sound hide">
+                <div id="bistro">
+                    <audio id="song" src="Sound\Bistro Fada.mp3"></audio>
+                </div>
+                <div id="cork">
+                    <audio id="corkAudio" src="Sound\Cork.mp3"></audio>
+                </div>
+                <div id="ding">
+                    <audio id="correctAudio" src="Sound\Ding.mp3"></audio>
+                </div>
+                <div id="clack">
+                    <audio id="clackAudio" src="Sound\clack.mp3"></audio>
+                </div>
+            </div>
+        </footer>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
