@@ -87,14 +87,12 @@ button {
     box-shadow: 0 2.5px forestgreen;
 }
 
-#btn1,
-#btn2,
-#btn3,
-#btn4 {
-    font-weight: 200;
-    font-size: 110%;
+.btns {
+    font-size: 100%;
     font-family: "Times New Roman", Times, serif;
 }
+
+
 
 button:hover {
     background-color: rgba(34, 139, 34, 0.671);
@@ -148,7 +146,7 @@ button#scoreSaver:active {
     color: white;
 }
 
-.input-group {
+.inputGroup {
     transform: rotate(-0.25turn);
     margin-top: 4rem;
 }

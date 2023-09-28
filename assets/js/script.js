@@ -9,7 +9,7 @@ let endGameEl = document.querySelector(".endGame");
 let viewScoresButton = document.getElementById("scoreViewer");
 let submitScoreButton = document.getElementById("scoreSaver");
 let firstContainerEl = document.querySelector(".container");
-let formEl = document.querySelector(".input-group");
+let formEl = document.querySelector(".inputGroup");
 let playAgainBtnEl = document.getElementById("playAgainButton");
 let endScoreEl = document.getElementById("endScoreSpan");
 //Sound Elements
@@ -29,9 +29,7 @@ let answerBtnIndividual = document.getElementById(
 //Saving variables
 let scoreName = document.getElementById("nameInput").value;
 let orderedListEL = document.getElementById("highScoreList");
-// let scoreGroup = JSON.parse(localStorage.getItem('highScores'))||[]
 let scoreGroup = [];
-// let orderedListEL = JSON.parse(localStorage.getItem(orderedListEL));
 
 //Start Game button function
 startButton.addEventListener("click", startGame);
@@ -149,15 +147,10 @@ function submittedScore() {
     console.log(currentScore);
 
     orderedListEL.innerText = JSON.stringify(scoreGroup);
-    // highScoreStorage.forEach(function(element){
-    // JSON.stringify(this)
-    // console.log(this)
+
     console.log(element);
     let listItem = document.createElement("li");
     listItem.innerText = element.name + " " + element.score;
-    // listItem.innerText = element.name + " " + element.score
-    // orderedListEL.appendChild(listItem)
-    // })
     console.log(scoreName);
 }
 
@@ -307,69 +300,9 @@ let questions = [
         answers: ["a", "b", "c", "d"],
         correctAnswer: "b",
     },
-    //Question 15
-    // {
-    //   question: "Insert question 15 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 16
-    // {
-    //   question: "Insert question 16 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 17
-    // {
-    //   question: "Insert question 17 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 18
-    // {
-    //   question: "Insert question 18 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 19
-    // {
-    //   question: "Insert question 19 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 20
-    // {
-    //   question: "Insert question 20 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 21
-    // {
-    //   question: "Insert question 21 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 22
-    // {
-    //   question: "Insert question 22 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 23
-    // {
-    //   question: "Insert question 23 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    // //Question 24
-    // {
-    //   question: "Insert question 24 (?)",
-    //   answers: ["a", "b", "c", "d"],
-    //   correctAnswer: "b",
-    // },
-    //Question 25
+
     {
-        question: "Insert question 25 (?)",
+        question: "Insert question 15 (?)",
         answers: ["a", "b", "c", "d"],
         correctAnswer: "b",
     },

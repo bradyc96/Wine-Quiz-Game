@@ -24,16 +24,16 @@
                 <div id="questionCard" class="hide">
                     <h1 id="question">?</h1>
                     <div id="answerBtns" class="answerGrid">
-                        <button id="btn1" onclick="chooseAnswer(event)">
+                        <button id="btn1" class="btns" onclick="chooseAnswer(event)">
                             ?
                         </button>
-                        <button id="btn2" onclick="chooseAnswer(event)">
+                        <button id="btn2" class="btns" onclick="chooseAnswer(event)">
                             ?
                         </button>
-                        <button id="btn3" onclick="chooseAnswer(event)">
+                        <button id="btn3" class="btns" onclick="chooseAnswer(event)">
                             ?
                         </button>
-                        <button id="btn4" onclick="chooseAnswer(event)">
+                        <button id="btn4" class="btns" onclick="chooseAnswer(event)">
                             ?
                         </button>
                     </div>
@@ -54,7 +54,7 @@
                         Write your name on the bottle and pop the cork to save
                         your score.
                     </p>
-                    <div class="input-group">
+                    <div class="inputGroup">
                         <input
                             id="nameInput"
                             type="text"
@@ -71,18 +71,12 @@
                 <button id="playAgainButton">Play Again</button>
 
                 <div id="scoreColumn">
-                    <!-- <div class="input-group">
-                    <input id = "nameInput" type="text" placeholder="Enter Name">
-                    <button id="scoreSaver">Save</button>
-                </div> -->
-                    <!-- <div id="list">
-                    <ol id = 'highScoreList'></ol>
-                </div> -->
+
                 </div>
             </div>
         </main>
         <footer>
-            <div id="sound hide">
+            <div id="hide">
                 <div id="bistro">
                     <audio id="song" src="Sound\Bistro Fada.mp3"></audio>
                 </div>
